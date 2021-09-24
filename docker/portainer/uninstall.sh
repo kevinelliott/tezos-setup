@@ -2,5 +2,8 @@
 
 source config.sh
 
-./tezos-uninstall.sh
-./portainer-uninstall.sh
+echo "--- Portainer: Uninstalling existing Portainer in Docker"
+docker stop portainer
+docker rm portainer
+docker volume prune -f
+echo
