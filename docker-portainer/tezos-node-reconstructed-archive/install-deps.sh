@@ -25,7 +25,5 @@ echo "--- Deps: Updating package source"
 apt -qq update
 echo "--- Deps: Installing Docker"
 apt -qq install -y docker-ce docker-ce-cli containerd.io rsync
-echo "--- Deps: Installing Docker Compose"
-apt -qq install -y docker-compose
 
 echo

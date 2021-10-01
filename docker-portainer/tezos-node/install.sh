@@ -11,4 +11,4 @@ if [ "${TEZOS_IMPORT_SNAPSHOT}" == "true" ]; then
   ./import-snapshot.sh
 fi
 
-TEZOS_VERSION="${TEZOS_VERSION}" TEZOS_HISTORY_MODE="${TEZOS_HISTORY_MODE}" docker-compose up -d
+./install-stack-into-portainer.sh

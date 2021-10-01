@@ -6,7 +6,7 @@ export TEMPLATE_GIT_SOURCE="https://github.com/kevinelliott/templates"
 export TEMPLATE_GIT_PATH="stacks/crypto/tezos/tezos-node-full/docker-stack.yml"
 export DOCKER_NAME="tezos-full"
 export TEZOS_HISTORY_MODE="full"
-export TEZOS_IMPORT_SNAPSHOT="true"
+export TEZOS_IMPORT_SNAPSHOT="false"
 
 ./install-deps.sh
 
