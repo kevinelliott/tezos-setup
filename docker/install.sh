@@ -2,7 +2,7 @@
 
 source ../config.sh
 
-TEZOS_HISTORY_MODE="${TEZOS_HISTORY_MODE:-archive}"
+TEZOS_HISTORY_MODE="${TEZOS_HISTORY_MODE:-rolling}"
 
 ./install-deps.sh
 
