@@ -20,7 +20,6 @@ case $TEZOS_HISTORY_MODE in
 esac
 
 # TEZOS_SNAPSHOT_URL="https://mainnet.xtz-shots.io/${TEZOS_SNAPSHOT}"
-TEZOS_SNAPSHOT_BLOCK="$(wget -qO- https://snaps.teztools.io/nodes/block)"
 TEZOS_SNAPSHOT_URL="https://snaps.teztools.io/nodes/mainnet-${TEZOS_SNAPSHOT_BLOCK}.${TEZOS_SNAPSHOT}"
 
 if [ ! -e ${TEZOS_HOST_PATH}/snapshots/${TEZOS_SNAPSHOT} ]; then

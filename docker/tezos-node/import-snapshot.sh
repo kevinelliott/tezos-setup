@@ -23,5 +23,5 @@ echo "--- Tezos: Importing snapshot ($TEZOS_SNAPSHOT) into Tezos Node path"
 docker run --rm \
   -v ${TEZOS_HOST_PATH}/node:/var/run/tezos/node \
   -v ${TEZOS_HOST_PATH}/snapshots/${TEZOS_SNAPSHOT}:/snapshot \
-  tezos/tezos:v${TEZOS_VERSION} tezos-snapshot-import
+  tezos/tezos:v${TEZOS_VERSION} tezos-snapshot-import --block=${TEZOS_SNAPSHOT_BLOCK}
 echo
